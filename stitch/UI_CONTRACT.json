@@ -1,0 +1,129 @@
+[
+  {
+    "screenId": "35bde87f70464efab9009e5794153115",
+    "screenTitle": "Gameplay - VectorLatch Lite",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "ACT_PAUSE_GAME",
+        "line": 157
+      },
+      {
+        "type": "button",
+        "label": "START GAME",
+        "line": 199
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "ACT_PAUSE_GAME",
+        "line": 157
+      },
+      {
+        "type": "button",
+        "label": "START GAME",
+        "line": 199
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 2,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "70d1c09541bf4d888cede1c6e2b6e970",
+    "screenTitle": "Game Settings - VectorLatch Lite",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Close",
+        "line": 177
+      },
+      {
+        "type": "button",
+        "label": "[ RESET PREFERENCES ]",
+        "line": 236
+      },
+      {
+        "type": "button",
+        "label": "CANCEL",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "SAVE &amp; RETURN",
+        "line": 246
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 190
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 204
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 211
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Close",
+        "line": 177
+      },
+      {
+        "type": "button",
+        "label": "[ RESET PREFERENCES ]",
+        "line": 236
+      },
+      {
+        "type": "button",
+        "label": "CANCEL",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "SAVE &amp; RETURN",
+        "line": 246
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 190
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 204
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 211
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 7,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
