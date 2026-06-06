@@ -1,0 +1,365 @@
+{
+  "generatedAt": "2026-06-06T05:13:25.633Z",
+  "screenCount": 2,
+  "screens": {
+    "35bde87f70464efab9009e5794153115": {
+      "screenId": "35bde87f70464efab9009e5794153115",
+      "materialSymbolsRequired": true,
+      "sections": [],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "ACT_PAUSE_GAME",
+          "classes": [
+            "bg-surface/70",
+            "backdrop-blur-md",
+            "border",
+            "border-primary/20",
+            "p-3",
+            "rounded-DEFAULT",
+            "hover:bg-primary/10",
+            "transition-colors",
+            "text-primary"
+          ],
+          "icon": "pause",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "START GAME",
+          "classes": [
+            "bg-primary-container",
+            "text-on-primary-container",
+            "px-8",
+            "py-4",
+            "font-label-caps",
+            "text-label-caps",
+            "rounded-DEFAULT",
+            "hover:shadow-[0_0_20px_rgba(0,240,255,0.6)]",
+            "transition-all",
+            "active:scale-95"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [],
+      "cards": [],
+      "icons": [
+        "pause"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-container-high": "#272a31",
+        "on-secondary": "#053900",
+        "secondary-fixed": "#79ff5b",
+        "on-secondary-fixed": "#022100",
+        "surface-container": "#1d2026",
+        "error-container": "#93000a",
+        "inverse-on-surface": "#2e3037",
+        "tertiary-fixed": "#ffd7f5",
+        "primary-fixed-dim": "#00dbe9",
+        "primary-container": "#00f0ff",
+        "secondary-container": "#2ff801",
+        "tertiary-container": "#ffc9f4",
+        "on-secondary-container": "#0f6d00",
+        "outline-variant": "#3b494b",
+        "on-tertiary-fixed-variant": "#810081",
+        "background": "#10131a",
+        "on-secondary-fixed-variant": "#095300",
+        "on-tertiary-container": "#a900a9",
+        "inverse-primary": "#006970",
+        "on-primary-fixed": "#002022",
+        "surface-dim": "#10131a",
+        "surface-bright": "#363940",
+        "secondary": "#d7ffc5",
+        "on-tertiary": "#5b005b",
+        "on-error-container": "#ffdad6",
+        "primary-fixed": "#7df4ff",
+        "outline": "#849495",
+        "on-surface-variant": "#b9cacb",
+        "on-error": "#690005",
+        "surface": "#10131a",
+        "surface-tint": "#00dbe9",
+        "on-background": "#e1e2eb",
+        "on-surface": "#e1e2eb",
+        "on-tertiary-fixed": "#380038",
+        "tertiary-fixed-dim": "#ffabf3",
+        "surface-variant": "#32353c",
+        "on-primary-fixed-variant": "#004f54",
+        "tertiary": "#fff3f9",
+        "inverse-surface": "#e1e2eb",
+        "surface-container-highest": "#32353c",
+        "surface-container-lowest": "#0b0e14",
+        "on-primary": "#00363a",
+        "surface-container-low": "#191c22",
+        "on-primary-container": "#006970",
+        "primary": "#dbfcff",
+        "error": "#ffb4ab",
+        "secondary-fixed-dim": "#2ae500"
+      },
+      "fonts": [
+        "Space Grotesk",
+        "Space Mono",
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "6"
+      },
+      "behaviorContract": [
+        {
+          "kind": "button",
+          "label": "ACT_PAUSE_GAME",
+          "icon": "pause",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "START GAME",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [],
+      "title": "Gameplay - VectorLatch Lite"
+    },
+    "70d1c09541bf4d888cede1c6e2b6e970": {
+      "screenId": "70d1c09541bf4d888cede1c6e2b6e970",
+      "materialSymbolsRequired": true,
+      "sections": [],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Close",
+          "classes": [
+            "absolute",
+            "top-hud-padding",
+            "right-safe-area",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "focus:outline-none"
+          ],
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "[ RESET PREFERENCES ]",
+          "classes": [
+            "font-label-caps",
+            "text-error",
+            "hover:text-error-container",
+            "hover:underline",
+            "decoration-1",
+            "underline-offset-4",
+            "transition-colors",
+            "focus:outline-none",
+            "text-[10px]"
+          ],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "CANCEL",
+          "classes": [
+            "flex-1",
+            "py-3",
+            "px-4",
+            "border",
+            "border-primary",
+            "text-primary",
+            "font-label-caps",
+            "hover:bg-primary/20",
+            "transition-colors",
+            "focus:outline-none",
+            "text-center",
+            "bg-transparent"
+          ],
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "SAVE & RETURN",
+          "classes": [
+            "flex-1",
+            "py-3",
+            "px-4",
+            "bg-primary",
+            "text-background",
+            "font-label-caps",
+            "hover:shadow-[0_0_15px_#00F0FF]",
+            "transition-shadow",
+            "focus:outline-none",
+            "text-center",
+            "relative",
+            "overflow-hidden",
+            "group"
+          ],
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "range",
+          "label": "range",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "range-slider",
+            "w-full",
+            "h-1",
+            "bg-surface-bright",
+            "rounded-full",
+            "outline-none",
+            "appearance-none",
+            "cursor-pointer"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "checkbox",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "sr-only",
+            "peer",
+            "toggle-checkbox"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [],
+      "cards": [],
+      "icons": [
+        "close"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-container-high": "#272a31",
+        "on-secondary": "#053900",
+        "secondary-fixed": "#79ff5b",
+        "on-secondary-fixed": "#022100",
+        "surface-container": "#1d2026",
+        "error-container": "#93000a",
+        "inverse-on-surface": "#2e3037",
+        "tertiary-fixed": "#ffd7f5",
+        "primary-fixed-dim": "#00dbe9",
+        "primary-container": "#00f0ff",
+        "secondary-container": "#2ff801",
+        "tertiary-container": "#ffc9f4",
+        "on-secondary-container": "#0f6d00",
+        "outline-variant": "#3b494b",
+        "on-tertiary-fixed-variant": "#810081",
+        "background": "#10131a",
+        "on-secondary-fixed-variant": "#095300",
+        "on-tertiary-container": "#a900a9",
+        "inverse-primary": "#006970",
+        "on-primary-fixed": "#002022",
+        "surface-dim": "#10131a",
+        "surface-bright": "#363940",
+        "secondary": "#d7ffc5",
+        "on-tertiary": "#5b005b",
+        "on-error-container": "#ffdad6",
+        "primary-fixed": "#7df4ff",
+        "outline": "#849495",
+        "on-surface-variant": "#b9cacb",
+        "on-error": "#690005",
+        "surface": "#10131a",
+        "surface-tint": "#00dbe9",
+        "on-background": "#e1e2eb",
+        "on-surface": "#e1e2eb",
+        "on-tertiary-fixed": "#380038",
+        "tertiary-fixed-dim": "#ffabf3",
+        "surface-variant": "#32353c",
+        "on-primary-fixed-variant": "#004f54",
+        "tertiary": "#fff3f9",
+        "inverse-surface": "#e1e2eb",
+        "surface-container-highest": "#32353c",
+        "surface-container-lowest": "#0b0e14",
+        "on-primary": "#00363a",
+        "surface-container-low": "#191c22",
+        "on-primary-container": "#006970",
+        "primary": "#dbfcff",
+        "error": "#ffb4ab",
+        "secondary-fixed-dim": "#2ae500"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Space Grotesk",
+        "Space Mono",
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 2,
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "button",
+          "label": "Close",
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "[ RESET PREFERENCES ]",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "CANCEL",
+          "icon": null,
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "SAVE & RETURN",
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "input",
+          "label": "range",
+          "type": "range",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "checkbox",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [],
+      "title": "Game Settings - VectorLatch Lite"
+    }
+  }
+}

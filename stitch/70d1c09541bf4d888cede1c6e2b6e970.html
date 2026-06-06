@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Game Settings - VectorLatch Lite</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Space+Mono:wght@400;700&amp;family=Inter:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-high": "#272a31",
+                        "on-secondary": "#053900",
+                        "secondary-fixed": "#79ff5b",
+                        "on-secondary-fixed": "#022100",
+                        "surface-container": "#1d2026",
+                        "error-container": "#93000a",
+                        "inverse-on-surface": "#2e3037",
+                        "tertiary-fixed": "#ffd7f5",
+                        "primary-fixed-dim": "#00dbe9",
+                        "primary-container": "#00f0ff",
+                        "secondary-container": "#2ff801",
+                        "tertiary-container": "#ffc9f4",
+                        "on-secondary-container": "#0f6d00",
+                        "outline-variant": "#3b494b",
+                        "on-tertiary-fixed-variant": "#810081",
+                        "background": "#10131a",
+                        "on-secondary-fixed-variant": "#095300",
+                        "on-tertiary-container": "#a900a9",
+                        "inverse-primary": "#006970",
+                        "on-primary-fixed": "#002022",
+                        "surface-dim": "#10131a",
+                        "surface-bright": "#363940",
+                        "secondary": "#d7ffc5",
+                        "on-tertiary": "#5b005b",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed": "#7df4ff",
+                        "outline": "#849495",
+                        "on-surface-variant": "#b9cacb",
+                        "on-error": "#690005",
+                        "surface": "#10131a",
+                        "surface-tint": "#00dbe9",
+                        "on-background": "#e1e2eb",
+                        "on-surface": "#e1e2eb",
+                        "on-tertiary-fixed": "#380038",
+                        "tertiary-fixed-dim": "#ffabf3",
+                        "surface-variant": "#32353c",
+                        "on-primary-fixed-variant": "#004f54",
+                        "tertiary": "#fff3f9",
+                        "inverse-surface": "#e1e2eb",
+                        "surface-container-highest": "#32353c",
+                        "surface-container-lowest": "#0b0e14",
+                        "on-primary": "#00363a",
+                        "surface-container-low": "#191c22",
+                        "on-primary-container": "#006970",
+                        "primary": "#dbfcff",
+                        "error": "#ffb4ab",
+                        "secondary-fixed-dim": "#2ae500"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "gutter": "12px",
+                        "hud-padding": "16px",
+                        "safe-area": "24px",
+                        "unit": "4px",
+                        "node-gap": "8px"
+                    },
+                    fontFamily: {
+                        "headline-lg": ["Space Grotesk"],
+                        "label-caps": ["Space Mono"],
+                        "data-point": ["Space Mono"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Space Grotesk"],
+                        "display-score": ["Space Mono"]
+                    },
+                    fontSize: {
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "data-point": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "display-score": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0B0E14;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(0, 240, 255, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(255, 0, 255, 0.1) 0%, transparent 40%);
+        }
+        .glass-panel {
+            background-color: rgba(26, 31, 38, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+        }
+        .scanline {
+            background: linear-gradient(
+                to bottom,
+                rgba(0,0,0,0) 50%,
+                rgba(0,0,0,0.2) 50%
+            );
+            background-size: 100% 4px;
+        }
+        .range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            background: #00F0FF;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #00F0FF;
+        }
+        .range-slider::-moz-range-thumb {
+            width: 16px;
+            height: 16px;
+            background: #00F0FF;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #00F0FF;
+            border: none;
+        }
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #00F0FF;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: rgba(0, 240, 255, 0.2);
+            border-color: #00F0FF;
+        }
+        .toggle-checkbox:checked + .toggle-label::after {
+            transform: translateX(100%);
+            background-color: #00F0FF;
+            box-shadow: 0 0 8px #00F0FF;
+        }
+    </style>
+</head>
+<body class="text-on-surface font-body-md h-screen w-screen overflow-hidden flex items-center justify-center relative bg-background">
+<!-- Blurred Gameplay Background Simulation -->
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 left-1/4 w-32 h-32 rounded-full border-2 border-primary/30 flex items-center justify-center" style="box-shadow: 0 0 20px rgba(0,240,255,0.2);">
+<div class="w-24 h-24 rounded-full border border-primary/50 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-primary/10"></div>
+</div>
+</div>
+<div class="absolute bottom-1/3 right-1/4 w-48 h-48 rounded-full border border-secondary-fixed/20 flex items-center justify-center" style="box-shadow: 0 0 30px rgba(121,255,91,0.1);">
+<div class="w-40 h-40 rounded-full border border-secondary-fixed/40"></div>
+</div>
+<!-- Simulated nodes and paths -->
+<svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<path d="M 200 300 Q 400 100 600 500 T 1000 400" fill="none" stroke="#00F0FF" stroke-width="1"></path>
+<path d="M 100 600 L 300 500 L 500 700 L 800 600" fill="none" stroke="#79ff5b" stroke-dasharray="4 4" stroke-width="1"></path>
+</svg>
+<div class="absolute inset-0 bg-background/60 backdrop-blur-[2px]"></div>
+</div>
+<!-- Main Settings Modal (SURF_GAME_SETTINGS) -->
+<div class="relative z-10 glass-panel w-full max-w-md mx-hud-padding md:mx-0 flex flex-col shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+<!-- Header -->
+<div class="relative px-safe-area py-hud-padding border-b border-primary/20 bg-surface-container-lowest/50 scanline">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-primary tracking-tight">SYSTEM CONFIG</h1>
+<p class="font-label-caps text-on-surface-variant mt-unit">VECTORLATCH LITE // V1.0</p>
+<button aria-label="Close" class="absolute top-hud-padding right-safe-area text-on-surface-variant hover:text-primary transition-colors focus:outline-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">close</span>
+</button>
+</div>
+<!-- Content Body -->
+<div class="p-safe-area flex flex-col gap-safe-area">
+<!-- Performance Section -->
+<div class="flex flex-col gap-hud-padding">
+<div class="flex justify-between items-center">
+<h2 class="font-label-caps text-primary">CORE SPEED / DIFFICULTY</h2>
+<span class="font-data-point text-primary-fixed-dim bg-primary/10 px-2 py-1 rounded">LVL 4</span>
+</div>
+<div class="relative w-full mt-unit">
+<input class="range-slider w-full h-1 bg-surface-bright rounded-full outline-none appearance-none cursor-pointer" max="10" min="1" type="range" value="4"/>
+<div class="flex justify-between w-full mt-2 font-data-point text-on-surface-variant text-[10px]">
+<span>SLOW</span>
+<span>NORMAL</span>
+<span>OVERDRIVE</span>
+</div>
+</div>
+</div>
+<!-- Audio Section -->
+<div class="flex flex-col gap-hud-padding pt-hud-padding border-t border-primary/10">
+<h2 class="font-label-caps text-primary">AUDIO SYSTEMS</h2>
+<div class="flex justify-between items-center">
+<span class="font-data-point text-on-surface">SFX Feedback</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer toggle-checkbox" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface-variant after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all toggle-label border border-outline-variant"></div>
+</label>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-data-point text-on-surface">Atmospheric Track</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer toggle-checkbox" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface-variant after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all toggle-label border border-outline-variant"></div>
+</label>
+</div>
+</div>
+<!-- Input Help Section -->
+<div class="flex flex-col gap-hud-padding pt-hud-padding border-t border-primary/10">
+<h2 class="font-label-caps text-primary">INPUT TELEMETRY</h2>
+<div class="grid grid-cols-2 gap-unit bg-surface-container-lowest p-hud-padding border border-primary/10">
+<div class="flex items-center gap-2">
+<span class="px-2 py-1 bg-surface-bright text-on-surface font-data-point rounded border border-outline-variant text-xs">SPACE</span>
+</div>
+<div class="flex items-center justify-end font-data-point text-on-surface-variant text-sm text-right">
+                        RELEASE LATCH
+                    </div>
+<div class="flex items-center gap-2 mt-2">
+<span class="px-2 py-1 bg-surface-bright text-on-surface font-data-point rounded border border-outline-variant text-xs">P</span>
+</div>
+<div class="flex items-center justify-end font-data-point text-on-surface-variant text-sm text-right mt-2">
+                        PAUSE SIMULATION
+                    </div>
+</div>
+</div>
+<!-- Reset -->
+<div class="flex justify-end pt-unit">
+<button class="font-label-caps text-error hover:text-error-container hover:underline decoration-1 underline-offset-4 transition-colors focus:outline-none text-[10px]">
+                    [ RESET PREFERENCES ]
+                </button>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="p-safe-area pt-0 flex gap-hud-padding">
+<button class="flex-1 py-3 px-4 border border-primary text-primary font-label-caps hover:bg-primary/20 transition-colors focus:outline-none text-center bg-transparent">
+                CANCEL
+            </button>
+<button class="flex-1 py-3 px-4 bg-primary text-background font-label-caps hover:shadow-[0_0_15px_#00F0FF] transition-shadow focus:outline-none text-center relative overflow-hidden group">
+<span class="relative z-10">SAVE &amp; RETURN</span>
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-200"></div>
+</button>
+</div>
+</div>
+</body></html>

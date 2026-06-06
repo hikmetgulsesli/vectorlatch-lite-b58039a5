@@ -1,0 +1,24 @@
+[
+  {
+    "screenId": "35bde87f70464efab9009e5794153115",
+    "title": "Gameplay - VectorLatch Lite",
+    "htmlFile": "35bde87f70464efab9009e5794153115.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2EzODhhYjYxYTg5ZTQzZjM5ZGVjY2Y4NWFkZWZjMGNkEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxNTk4MjM0MDkzMDA2OTQ4ODI0Nw&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/vectorlatch-lite-b58039a5/stitch/35bde87f70464efab9009e5794153115.html",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  },
+  {
+    "screenId": "70d1c09541bf4d888cede1c6e2b6e970",
+    "title": "Game Settings - VectorLatch Lite",
+    "htmlFile": "70d1c09541bf4d888cede1c6e2b6e970.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzY1ZjA0ODUxMjZkZjQwMzE5MjZiN2ExZTMxYzhlMjFiEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxNTk4MjM0MDkzMDA2OTQ4ODI0Nw&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/vectorlatch-lite-b58039a5/stitch/70d1c09541bf4d888cede1c6e2b6e970.html",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  }
+]

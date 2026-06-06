@@ -1,0 +1,20 @@
+[
+  {
+    "screenId": "35bde87f70464efab9009e5794153115",
+    "name": "Gameplay - VectorLatch Lite",
+    "type": "game",
+    "description": "Gameplay - VectorLatch Lite screen",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  },
+  {
+    "screenId": "70d1c09541bf4d888cede1c6e2b6e970",
+    "name": "Game Settings - VectorLatch Lite",
+    "type": "settings",
+    "description": "Game Settings - VectorLatch Lite screen",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  }
+]
