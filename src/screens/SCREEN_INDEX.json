@@ -1,0 +1,60 @@
+[
+  {
+    "screenId": "35bde87f70464efab9009e5794153115",
+    "title": "Gameplay - VectorLatch Lite",
+    "componentName": "GameplayVectorlatchLite",
+    "file": "src/screens/GameplayVectorlatchLite.tsx",
+    "buttons": 2,
+    "inputs": 0,
+    "links": 0,
+    "actions": [
+      {
+        "id": "act-pause-game-1",
+        "kind": "button",
+        "label": "ACT_PAUSE_GAME",
+        "index": 0
+      },
+      {
+        "id": "act-start-game-2",
+        "kind": "button",
+        "label": "ACT_START_GAME",
+        "index": 1
+      }
+    ]
+  },
+  {
+    "screenId": "70d1c09541bf4d888cede1c6e2b6e970",
+    "title": "Game Settings - VectorLatch Lite",
+    "componentName": "GameSettingsVectorlatchLite",
+    "file": "src/screens/GameSettingsVectorlatchLite.tsx",
+    "buttons": 4,
+    "inputs": 3,
+    "links": 0,
+    "actions": [
+      {
+        "id": "close-1",
+        "kind": "button",
+        "label": "Close",
+        "index": 0
+      },
+      {
+        "id": "reset-preferences-2",
+        "kind": "button",
+        "label": "[ RESET PREFERENCES ]",
+        "index": 1
+      },
+      {
+        "id": "cancel-3",
+        "kind": "button",
+        "label": "CANCEL",
+        "index": 2
+      },
+      {
+        "id": "save-and-return-4",
+        "kind": "button",
+        "label": "SAVE and RETURN",
+        "index": 3
+      }
+    ]
+  }
+]
